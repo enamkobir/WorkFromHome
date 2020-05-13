@@ -21,7 +21,9 @@
             <td>{{$single->details}}</td>
             <td>
               <p>
+              <a href="{{url('/workRequest')}}" class="btn btn-sm btn-warning">Requesters</a>
               <a href="" class="btn btn-sm btn-primary">Worker</a>
+              <a href="" class="btn btn-sm btn-success">Payment</a>
               </p>
             </td>
           </tr>
@@ -29,7 +31,5 @@
     </div>
   </div>
 </div>
-
-
 
 @endsection

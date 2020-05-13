@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   <meta charset="utf-8">
@@ -180,13 +181,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Post
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
+
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{url('allpostForWorker')}}" class="nav-link ">
@@ -195,30 +190,60 @@
                 </a>
               </li>
             </ul>
-              <li class="nav-item">
-                <a href="" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    All Worker
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    My Group
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                   Current Working Group
-                  </p>
-                </a>
-              </li>
+
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="{{url('allWorkerAccountForWorker')}}" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>All Workers</p>
+              </a>
+            </li>
+            </ul>
+
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="{{url('/grouprequests')}}" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>Group Requests</p>
+              </a>
+            </li>
+            </ul>
+
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="{{url('groupMemberForWorker')}}" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>My Group Members</p>
+                  </a>
+                </li>
+            </ul>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="{{url('groupWorker')}}" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>My Group Work</p>
+                  </a>
+                </li>
+            </ul>
+
+
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="{{url('submitMyWork')}}" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>My Clients Work</p>
+                  </a>
+                </li>
+            </ul>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="{{url('wonGroupForWorker')}}" class="nav-link ">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Group Work</p>
+                  </a>
+                </li>
+            </ul>
+
       </nav>
       <!-- /.sidebar-menu -->
     </div>

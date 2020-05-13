@@ -18,7 +18,7 @@
             <td>{{$row->email}}</td>
             <td>
               <p>
-              <a href="" class="btn btn-sm btn-success">View</a>
+              <a href="https://gmail.com/" target="_blank" class="btn btn-sm btn-success">Contact</a>
               <a href="" class="btn btn-sm btn-danger">Delete</a>
               </p>
             </td>

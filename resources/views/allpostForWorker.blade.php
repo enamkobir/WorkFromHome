@@ -13,12 +13,24 @@
           <table class="table table-responsive">
             <tr>
               <th>
-               <p><b>Name:</b> {{$row->name}}
-               <a href="" class="btn btn-sm btn-success" style="float:right;">Request Accept</a>
-               <a href="" class="btn btn-sm btn-primary" style="float:right;">Send Request</a>
-               </p>
-            </th>
-          </tr>
+               <p><b>Client Name:</b> {{$row->name}} </p>
+                <p>  <b style>Work Duration:  {{$row->duration}} </b>
+                 <?php
+
+                 $check= DB::table('work_request')
+                      ->where('user_requested','=',$row->id)
+                      ->where('requester','=', Auth::user()->id)
+                      ->first();
+
+                  if($check==''){
+                 ?>
+               <a href="{{url('/sendWorkRequest/'.$row->id)}}" class="btn btn-sm btn-primary" style="float:right;">Send Request</a>
+             <?php  } else{?>
+               <a style="float:right;">Already Sent</a>
+             <?php }?>
+             </p>
+              </th>
+            </tr>
           <td>
             <p><b>Job Details:</b> {{$row->details}}  </p>
           </td>
