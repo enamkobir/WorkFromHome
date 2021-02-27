@@ -17,7 +17,7 @@ class AdminController extends Controller
     if($user->role==1){
       return view('admin.dashboard');
     }else{
-      return "Tui Admin Naaaaaaa";
+      return "Sorry you are not Admin";
     }
   }
 }

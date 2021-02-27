@@ -13,12 +13,13 @@
           <table class="table table-responsive">
             <tr>
               <th>
-               <p><b>Name:</b> {{$row->name}}
-               <a href="" class="btn btn-sm btn-success" style="float:right;">Request Accept</a>
-               <a href="" class="btn btn-sm btn-primary" style="float:right;">Send Request</a>
+               <p><b>Client Name:</b> {{$row->name}}
+               <button href="" class="btn btn-sm btn-success" style="float:right;">Request Accept</button>
+               <button href="" class="btn btn-sm btn-primary" style="float:right;">Send Request</button>
+               <b style="float:right;">Work Duration:  {{$row->duration}} </b>
                </p>
-            </th>
-          </tr>
+              </th>
+            </tr>
           <td>
             <p><b>Job Details:</b> {{$row->details}}  </p>
           </td>

@@ -22,6 +22,7 @@
             <td>
               <p>
               <a href="" class="btn btn-sm btn-primary">Worker</a>
+              <a href="" class="btn btn-sm btn-success">Payment</a>
               </p>
             </td>
           </tr>
@@ -29,7 +30,5 @@
     </div>
   </div>
 </div>
-
-
 
 @endsection

@@ -9,7 +9,8 @@
             <tr>
               <th>Name</th>
               <th>Email</th>
-              <th>Details</th>
+              <th>Post</th>
+              <th>Duration</th>
               <th>Action</th>
             </tr>
             @foreach($data as $row)
@@ -17,9 +18,9 @@
               <td>{{$row->name}}</td>
               <td>{{$row->email}}</td>
               <td>{{$row->details}}</td>
+              <td>{{$row->duration}}</td>
               <td>
                 <p>
-                <a href="" class="btn btn-sm btn-success">View</a>
                 <a href="" class="btn btn-sm btn-danger">Delete</a>
                 </p>
               </td>

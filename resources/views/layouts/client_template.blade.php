@@ -202,11 +202,9 @@
               </li>
             </ul>
             <li class="nav-item">
-              <a href="pages/widgets.html" class="nav-link">
+              <a href="{{url('submittedWorkForClient')}}" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
-                <p>
-
-                </p>
+                  <p>Submitted Work</p>
               </a>
             </li>
       </nav>

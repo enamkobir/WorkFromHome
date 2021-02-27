@@ -1,4 +1,4 @@
-@extends('layouts.admin_template')
+@extends('layouts.worker_template')
 @section('content')
 
 <div class="container" style="margin-left:2%; margin-top:2%;">
@@ -17,10 +17,15 @@
             <td>{{$row->name}}</td>
             <td>{{$row->email}}</td>
             <td>
+              @if(session()->has('msg'))
               <p>
-              <a href="https://gmail.com/" target="_blank" class="btn btn-sm btn-success">Contact</a>
-              <a href="" class="btn btn-sm btn-danger">Delete</a>
+                {{session()->get('msg')}}
               </p>
+              @else
+                <p>
+                <a href="{{url('/sendGroupRequest'.$row->id)}}" class="btn btn-sm btn-primary" style="float:right;">Send Group Request</a>
+                </p>
+              @endif
             </td>
           </tr>
           @endforeach
