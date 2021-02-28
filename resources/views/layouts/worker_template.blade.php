@@ -231,7 +231,11 @@
                 <li class="nav-item">
                   <a href="{{url('submitMyWork')}}" class="nav-link ">
                     <i class="far fa-circle nav-icon"></i>
+<<<<<<< HEAD
                     <p>My Clients Work</p>
+=======
+                    <p>My Work</p>
+>>>>>>> 6ca9a67cf9c224be148ee4049189409195ec4720
                   </a>
                 </li>
             </ul>

@@ -7,6 +7,10 @@
 
         <table class="table table-responsive">
           <tr>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ca9a67cf9c224be148ee4049189409195ec4720
             <th>Name</th>
             <th>Email</th>
             <th>Action</th>
@@ -16,6 +20,7 @@
             <td>{{$row->name}}</td>
             <td>{{$row->email}}</td>
             <td>
+<<<<<<< HEAD
                <?php
 
                $check= DB::table('groups')
@@ -32,6 +37,17 @@
                 <p>Request Already Sent</p>
               <?php }?>
 
+=======
+              @if(session()->has('msg'))
+              <p>
+                {{session()->get('msg')}}
+              </p>
+              @else
+                <p>
+                <a href="{{url('/sendGroupRequest'.$row->id)}}" class="btn btn-sm btn-primary" style="float:right;">Send Group Request</a>
+                </p>
+              @endif
+>>>>>>> 6ca9a67cf9c224be148ee4049189409195ec4720
             </td>
           </tr>
           @endforeach

@@ -23,7 +23,11 @@
             </td>
             <td>
               <p>
+<<<<<<< HEAD
               <a href="{{url('/removeGroupMember'.$row->id)}}" class="btn btn-sm btn-danger">Ungroup</a>
+=======
+              <a href="{{url('/removeGroupRequest'.$row->id)}}" class="btn btn-sm btn-danger">Ungroup</a>
+>>>>>>> 6ca9a67cf9c224be148ee4049189409195ec4720
               </p>
             </td>
           </tr>

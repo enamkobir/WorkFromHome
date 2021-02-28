@@ -13,6 +13,7 @@
           <table class="table table-responsive">
             <tr>
               <th>
+<<<<<<< HEAD
                <p><b>Client Name:</b> {{$row->name}} </p>
                 <p>  <b style>Work Duration:  {{$row->duration}} </b>
                  <?php
@@ -29,6 +30,13 @@
                <a style="float:right;">Already Sent</a>
              <?php }?>
              </p>
+=======
+               <p><b>Client Name:</b> {{$row->name}}
+               <button href="" class="btn btn-sm btn-success" style="float:right;">Request Accept</button>
+               <button href="" class="btn btn-sm btn-primary" style="float:right;">Send Request</button>
+               <b style="float:right;">Work Duration:  {{$row->duration}} </b>
+               </p>
+>>>>>>> 6ca9a67cf9c224be148ee4049189409195ec4720
               </th>
             </tr>
           <td>

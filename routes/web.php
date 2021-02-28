@@ -31,15 +31,22 @@ Route::get('/allpostForWorker','allpostController@allpostForWorker');
 Route::get('/allWorkerAccount','allWorkerAccountController@allWorkerAccount');
 Route::get('/allClientAccount','allClientAccountController@allClientAccount');
 Route::get('/allWorkerAccountForWorker','allWorkerAccountController@allWorkerAccountForWorker');
+<<<<<<< HEAD
 Route::get('/sendGroupRequest/{id}','groupController@sendGroupRequest');
+=======
+Route::get('/sendGroupRequest{id}','groupController@sendGroupRequest');
+>>>>>>> 6ca9a67cf9c224be148ee4049189409195ec4720
 Route::get('/grouprequests','groupController@grouprequests');
 Route::get('/confirmGroupRequest{id}','groupController@confirmGroupRequest');
 Route::get('/groupMemberForWorker','groupController@groupMemberForWorker');
 Route::get('/wonGroupForWorker','groupController@wonGroupForWorker');
 Route::get('/removeGroupRequest{id}','groupController@removeGroupRequest');
+<<<<<<< HEAD
 Route::get('/removeGroupMember{id}','groupController@removeGroupMember');
 Route::get('/sendWorkRequest/{id}','workRequestController@sendWorkRequest');
 Route::get('/workRequest','workRequestController@workRequest');
+=======
+>>>>>>> 6ca9a67cf9c224be148ee4049189409195ec4720
 Route::get('/groupWorker','allWorkerGroupController@groupWorker');
 Route::get('/contact','contactController@contact');
 Route::get('/home', 'HomeController@index')->name('home');
